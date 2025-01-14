@@ -1,5 +1,5 @@
 import React from 'react'
-import Target from '../assets/target.jpg'
+import Target from '../assets/target.png'
 
 export function Mission({ bgColor, textColor }) {
     return (

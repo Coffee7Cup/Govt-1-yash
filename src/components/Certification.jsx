@@ -1,5 +1,5 @@
 import React from "react"
-import MODI from '../assets/Hero.png'
+import zed from '../assets/zed-logo.png'
 
 export function Certification() {
   return (
@@ -8,11 +8,11 @@ export function Certification() {
         <div className="grid md:grid-cols-2 gap-12 items-center">
           <div>
             <img
-              src={MODI}
+              src={zed}
               alt="ZED MSME Certification"
               width={400}
               height={400}
-              className="w-full h-[20em] object-cover"
+              className="w-full h-[20em] object-contain"
             />
           </div>
           <div className="space-y-6">

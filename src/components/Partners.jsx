@@ -1,23 +1,27 @@
 import React from "react";
 import MODI from '../assets/Hero.png'
+import msme from '../assets/msme-seeklogo.png'
+import g20 from '../assets/g20.png'
+import zed from '../assets/zed-logo.png'
+import epr from '../assets/epr.png'
 
 export function Partners() {
 
   const images = [
     {
-      _img : MODI,
+      _img : msme,
       _alt: 'Bharat Entrepreneurship Summit'
     },
     {
-      _img : MODI,
+      _img : g20,
       _alt: 'Bharat Entrepreneurship Summit'
     },
     {
-      _img : MODI,
+      _img : zed,
       _alt: 'Bharat Entrepreneurship Summit'
     },
     {
-      _img : MODI,
+      _img : epr,
       _alt: 'Bharat Entrepreneurship Summit'
     },
     

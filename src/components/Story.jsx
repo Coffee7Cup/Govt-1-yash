@@ -1,5 +1,7 @@
 import React from "react"
 import MODI from '../assets/Hero.png'
+import ppl1 from '../assets/ppl1.jpg'
+import ppl2 from '../assets/ppl2.jpg'
 
 export function Story() {
   const stats = [
@@ -29,14 +31,14 @@ export function Story() {
           </div>
           <div className="space-y-4">
             <img
-              src={MODI}
+              src={ppl1}
               alt="Workers in field"
               width={600}
               height={400}
               className="rounded-lg w-full h-[15em] object-cover"
             />
             <img
-              src={MODI}
+              src={ppl2}
               alt="Workers in factory"
               width={600}
               height={400}
