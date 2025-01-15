@@ -1,5 +1,7 @@
 import React, { useState } from "react";
 import logo from "../assets/logo.png";
+import logo2 from "../assets/logo2.png";
+import { NavLink } from "react-router-dom";
 
 export function Header() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -13,6 +15,13 @@ export function Header() {
       <div className="max-w-6xl mx-auto px-4">
         <div className="flex items-center justify-between h-20">
           <div className="flex items-center gap-2">
+          <img
+              src={logo2}
+              alt="Ministry Logo"
+              width={50}
+              height={50}
+              className="h-12 w-auto"
+            />
             <img
               src={logo}
               alt="Ministry Logo"
@@ -46,36 +55,48 @@ export function Header() {
               menuOpen ? "block" : "hidden"
             } absolute lg:static top-20 right-0 lg:top-auto lg:right-auto bg-white lg:bg-transparent shadow lg:shadow-none z-50 lg:z-auto`}
           >
-            <ul className="flex flex-col lg:flex-row lg:gap-6 gap-4 p-4 lg:p-0">
+            <ul className="flex flex-col lg:flex-row lg:gap-6 gap-4 p-4 lg:p-0 text-black">
               <li>
-                <a href="/" className="text-orange-600 hover:text-orange-700">
+                <NavLink to="/" className={(isActive) => (
+                  ` hover:text-orange-700 ${isActive ? "text-orange-600" : ""}`
+                )}>
                   Home
-                </a>
+                </NavLink>
               </li>
               <li>
-                <a href="/about" className="text-orange-600 hover:text-orange-700">
+                <NavLink to="/about" className={(isActive) => (
+                  ` hover:text-orange-700 ${isActive ? "text-orange-600" : ""}`
+                )}>
                   About
-                </a>
+                </NavLink>
               </li>
               <li>
-                <a href="/projects" className="text-orange-600 hover:text-orange-700">
+                <NavLink to="/projects" className={(isActive) => (
+                  ` hover:text-orange-700 ${isActive ? "text-orange-600" : ""}`
+                )}>
                   Our Projects
-                </a>
+                </NavLink>
               </li>
               <li>
-                <a href="/gallery" className="text-orange-600 hover:text-orange-700">
+                <NavLink to="/gallery" className={(isActive) => (
+                  ` hover:text-orange-700 ${isActive ? "text-orange-600" : ""}`
+                )}>
                   Gallery
-                </a>
+                </NavLink>
               </li>
               <li>
-                <a href="/service" className="text-orange-600 hover:text-orange-700">
+                <NavLink to="/service" className={(isActive) => (
+                  ` hover:text-orange-700 ${isActive ? "text-orange-600" : ""}`
+                )}>
                   Service
-                </a>
+                </NavLink>
               </li>
               <li>
-                <a href="/contact" className="text-orange-600 hover:text-orange-700">
+                <NavLink to="/contact" className={(isActive) => (
+                  ` hover:text-orange-700 ${isActive ? "text-orange-600" : ""}`
+                )}>
                   Contact
-                </a>
+                </NavLink>
               </li>
             </ul>
           </nav>

@@ -1,9 +1,9 @@
 import React from "react";
-import MODI from '../assets/Hero.png'
-import msme from '../assets/msme-seeklogo.png'
-import g20 from '../assets/g20.png'
-import zed from '../assets/zed-logo.png'
-import epr from '../assets/epr.png'
+import MODI from '../../assets/Hero.png'
+import msme from '../../assets/msme-seeklogo.png'
+import g20 from '../../assets/g20.png'
+import zed from '../../assets/zed-logo.png'
+import epr from '../../assets/epr.png'
 
 export function Partners() {
 

@@ -1,5 +1,5 @@
 import React from "react"
-import zed from '../assets/zed-logo.png'
+import zed from '../../assets/zed-logo.png'
 
 export function Certification() {
   return (

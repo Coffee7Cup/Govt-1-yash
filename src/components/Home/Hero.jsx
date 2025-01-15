@@ -1,5 +1,5 @@
 import React from "react"
-import MODI from '../assets/modi.png'
+import MODI from '../../assets/modi.png'
 
 export function Hero() {
   return (
@@ -8,10 +8,10 @@ export function Hero() {
         <div className="grid md:grid-cols-2 gap-8 items-center">
           <div className="space-y-4">
             <h1 className="text-4xl font-bold">
-              <div>सबका साथ</div>
-              <div>सबका विकास</div>
-              <div>सबका विश्वास</div>
-              <div>सबका प्रयास</div>
+              <div className="text-orange-500">सबका  <span className="text-white"> साथ  </span></div>
+              <div className="text-orange-500 ml-10">सबका <span className="text-white"> विकास  </span></div>
+              <div className="text-orange-500">सबका <span className="text-white"> विश्वास  </span></div>
+              <div className="text-orange-500 ml-10">सबका <span className="text-white"> प्रयास  </span></div>
             </h1>
           </div>
           <div className="relative h-[300px] ">

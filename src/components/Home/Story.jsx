@@ -1,7 +1,7 @@
 import React from "react"
-import MODI from '../assets/Hero.png'
-import ppl1 from '../assets/ppl1.jpg'
-import ppl2 from '../assets/ppl2.jpg'
+import MODI from '../../assets/Hero.png'
+import ppl1 from '../../assets/ppl1.jpg'
+import ppl2 from '../../assets/ppl2.jpg'
 
 export function Story() {
   const stats = [
